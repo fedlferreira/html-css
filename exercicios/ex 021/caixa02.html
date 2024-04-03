@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tag</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+          margin: 0px;
+          
+        }
+        header{ 
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: lightgrey;
+            padding: 3px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+            box-shadow: 5px 3px 7px 1px black;
+            border: 1px solid black;
+        }
+        main{background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        #assuntos { 
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        article{
+            background-color: lightgray;
+        }
+        article > aside { 
+            background-color: rgb(129, 128, 128);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 1px;
+        }
+        footer > p { margin: 0px;}
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="a">Link</a>
+            <a href="a">Link</a>
+            <a href="a">Link</a>
+            <a href="a">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte Politicas e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>
+                    NOTICIAS SOBRE BRASIL
+                </h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum incidunt, voluptatem odit adipisci obcaecati hic dolor voluptatibus repellat inventore, labore, quia praesentium recusandae rerum? Nisi praesentium rerum voluptatibus eaque architecto!</p>
+                <aside><p>Artigo de jose da silva</p></aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>DESENVOLVIDO PELO CURSO EM VIDEO</p>
+    </footer>
+</body>
+</html>
