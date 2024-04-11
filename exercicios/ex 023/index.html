@@ -12,8 +12,18 @@
             width: 400px;
             border-collapse: collapse;
         }
-        td {
+       th, td {
             border: 1px solid black;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 1.5e,;
+            padding: 8px;
+            background-color: lightgrey;
+        }
+        tbody > tr:nth-child(2n)
+        /*podemos usar odd(impar) ou even(par) no lugar de 2n*/{
+            background-color: lightgray;
         }
        
     </style>
@@ -25,22 +35,45 @@
     TABLE ROW = linha de tabela
         TABLE HEADER = cabeçalho de tabela
         TABLE DATA = dados de tabela-->
+
+        <!--anatomia de tabelas
+        thead
+            tr, td ,th
+        tbody 
+            tr, td,th
+        tfoot
+            tr, td, th-->
         <table>
+            <caption> legenda da tebela</caption>
             <tr> <!--primeira linda da tebela--> 
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-        <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
+            <thead>
+                <tr>
+                    <th scope="col">letras 1</th>
+                    <th scope="col">letras 2</th>
+                    <th scope="col">letras 3</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <td >A1</td>
+                <td>B1</td>
+                <td>C1</td>
+                        </tr>
+                        <tr>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+                        </tr>
+                        <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+                        </tr>
+            </tbody>
+            <tfoot>
+                <th scope="row">total de letras</th>
+                <td>9 Letras</td>
+            </tfoot>
 
         </table>
     
